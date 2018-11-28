@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>例コード</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <ul>
+      <li><p>Rails Twitter Sample</p></li>
+      <li>
+        <%= link_to 'つぶやく', new_post_path , class: 'btn btn-default' %>
+      </li>
+    </ul>
+  </header>
+
+<%= yield %>
+
+  <footer>
+    <p>© Watahiki Masashi</p>
+  </footer>
+
+</body>
+</html>
